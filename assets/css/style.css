@@ -1,0 +1,98 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    background-color: var(--Off-Black);
+    text-align: center; 
+    margin: 0; 
+    padding: 0 1.5rem;
+}
+
+ul {
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    height: 100%;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0px auto;
+}
+
+.card {
+    width: 327px;
+    background-color: var(--Dark-Grey);
+    padding: 25px;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.card,
+#social-media a {
+    color: var(--White);
+}
+
+figure img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+h2 {
+    margin-top: 1.7rem;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+h4 {
+    color: var(--Green);
+    font-weight: 800;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+#social-media li a {
+    display: block;
+    background-color: var(--Grey);
+    padding: 15px 0;
+    font-size: 14px;
+    border-radius: 7px;
+    font-weight: 750;
+}
+
+#social-media li a:hover {
+    transition: all 0.3s;
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    font-weight: 600;
+}
+
+#social-media li:not(:last-child) {
+    margin-bottom: 16px;
+}
